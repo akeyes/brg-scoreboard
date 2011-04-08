@@ -1,0 +1,70 @@
+
+Changes in 0.1.6:
+
+Rename several team logo files that had a colon (:)
+in the filename, as Windows doesn't like colons
+in filenames.
+
+Update the Policy that controls the scoreboard.html
+Intermission Name (text description) to include
+"unconfirmed" and "confirmed" text, specifically to
+address the issue of "Final" being displayed after the
+bout.  Now by default, "Unofficial Final" is displayed,
+and the operator must manually select "confirmed" after
+the score is confirmed to change the display to "Final".
+The actual text is controllable in the Policy control
+area.
+
+Update the Policy that controls the scoreboard.html
+Intermission Time to hide it by default after the
+bout is over.  The operator can show the time manually,
+or disable the paramter to hide it by default after
+Period 2 is over.
+
+Add red background to each team's LeadJammer control
+in one-operator.html, to give visual feedback to operator
+of lead jammer status.
+
+Add Policy to display elapsed Period time (as well as normal
+Period time) in one-operator.html, only in edit mode.
+Includes ability to manually change the Period clock using
+elapsed time instead of normal time.
+
+Update <select> drop-down boxes so sub-elements can be used as
+each <option> element's text.  So for example, the operator
+jammer list displays Skater Names by default, but can be
+changed to display Jammer Numbers instead.  For this example,
+in the <select> element's class string, change
+OptionTextElement:Name to OptionTextElement:Number
+
+Fix bug where Team 1's "Lead" and "No Lead" Jammer key
+assignments were reversed.
+
+Fix bug that hid the Timeout controls on the iPhone.
+
+Change one-operator.html clock column widths.
+
+Add control to change Countdown clock maximum time.
+
+Update save.html and corresponding java core code
+to support loading specifically-formatted XML
+files with a single Team element and list
+of Skaters, to load into either Team 1 or 2.
+
+Add Policy to control scoreboard.html always
+showing Jam number during Lineups and Timeouts.
+Defaults to off, which is previous behavior.
+
+Add auto-font-resizing to Countdown view,
+so Countdown times larger than 59 seconds
+will correctly display.
+
+Fix bug in Countdown clock not showing on Countdown view.
+
+Fix bug in ScoreBoardFromXmlFile, in end-of-load parsing.
+
+Fix bug in ScoreBoardEventXmlVisitor, handling the "remove"
+and "add" attributes.
+
+
+
