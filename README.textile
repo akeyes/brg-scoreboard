@@ -1,3 +1,5 @@
+h1. Roller Derby Scoreboard for the Brandywine Roller Girls
+
 This is a single league's copy of the wonderful crg-scoreboard platform found at Sourceforge:
 http://sourceforge.net/projects/derbyscoreboard/
 
@@ -6,9 +8,12 @@ If you found this page via a google search or otherwise, you should use the link
 I'm putting this code here so it can be shared and used by the members of the Brandywine Roller Girls as we put art in, build XML team lists, etc.
 
 h1. How to start the server
+
 Make sure you have Java installed, then run the script corresponding to your OS:
 * *For OSX:* $ ./start-MacOS.command
+* *For Linux:* ./start-Linux.sh
+* *For Windows:* ./start-Windows.bat
 
-This starts the server running on port 8000. Navigate to:
+Then, point a browser to:
 http://localhost:8000 or
 http://127.0.0.1:8000 for further instructions.
